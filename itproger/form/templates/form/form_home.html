@@ -1,0 +1,21 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Оставить заявку{% endblock %}
+{% block snus %}
+{% block el %}
+{% endblock %}
+<div class="center">
+    <section class="forma" id="form">
+        <h1 class="title">Оставить заявку</h1>
+        <form action="" method="post">
+            {% csrf_token %}
+            {{ form.yslyga }}
+            {{ form.phone }}
+            {{ form.email }}
+            {{ form.coment }}
+            <span style="display: flex; justify-content: center; padding-bottom: 20px;">{{ error }}</span>
+            <button type="submit" class="btn btn-2"><span>ОТПРАВИТЬ</span></button>
+        </form>
+    </section>
+</div>
+{% endblock %}
