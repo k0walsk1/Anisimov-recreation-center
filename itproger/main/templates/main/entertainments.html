@@ -1,0 +1,212 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}{{title}}{% endblock %}
+{% load static %}
+{% block content %}
+<div class="elki">
+    <div class="elka3">
+        <img src="{% static 'main/img/image 32.png ' %}" alt="">
+    </div>
+    <div class="elka4">
+        <img src="{% static 'main/img/image 32.png ' %}" alt="">
+    </div>
+</div>
+<div class="center">
+    <main class="main">
+        <h1 class="title">Развлечения</h1>
+        <section class="koster" id="koster">
+            <div class="left">
+                <h3 class="title-razvl">Кострище</h3>
+                <p class="opisanie">Каждый вечер мы  зажигаем кострище для новых знакомств инеторопливых дружеских бесед</p>
+                <section class="cena">
+                    <div class="tipi-title">
+                    <div class="price ones">
+                        <h1 class="price-low">1 050 <i class="r"> ₽</i></h1>
+                        <div class="aga">
+                            <p class="proc">-30%</p>
+                            <h2 class="price-main"><del>1 500 </del><i class="r"> ₽</i></h2>
+                        </div>
+                    </div>
+                </section> 
+                <a href="{% url 'form_home' %}"><button class="btn btn-1 neo">ОСТАВИТЬ ЗАЯВКУ</button></a>
+            </div>
+            
+            <div class="right">
+                <img src="{% static 'main/img/koster-img_5890 1.png' %}" alt="">
+            </div>
+        </section>
+
+        <section class="fishing" id="fishing">
+            <div class="left">
+                <h3 class="title-razvl">Рыбалка / зимняя рыбалка</h3>
+                <p class="opisanie">Бронируйте мостик для рыбалки в пруду</p>
+                <section class="cena">
+                    <div class="tipi-title">
+                    <div class="price ones">
+                        <h1 class="price-low">1 050 <i class="r"> ₽</i></h1>
+                        <div class="aga">
+                            <p class="proc">-30%</p>
+                            <h2 class="price-main"><del>1 500 </del><i class="r"> ₽</i></h2>
+                        </div>
+                    </div>
+                </section> 
+                <a href="{% url 'form_home' %}"><button class="btn btn-1 neo">ОСТАВИТЬ ЗАЯВКУ</button></a>
+            </div>
+            
+            <div class="right">
+                <img src="{% static 'main/img/rybalka_dsc06820 1.png' %}" alt="">
+            </div>
+           
+        </section>
+
+        <section class="filter">
+            <section class="page__works works">
+                <div class="works__container">
+                  <div class="tipi-title">
+                    <h2 class="works__title ">Рыболовные <s>снасти</s> на прокат</h2>
+                  </div>
+                </div>
+                  
+                  <div class="works__items items-works">
+                    <nav class="items-works__navigation">
+                      <button data-work-type="" class="items-works__type button button_dark active">Все</button>
+                      <button data-work-type="Удочки" class="items-works__type button button_dark">Удочки</button>
+                      <button data-work-type="Приманки" class="items-works__type button button_dark">Приманки</button>
+                      <button data-work-type="Другое" class="items-works__type button button_dark">Другое</button>
+                    </nav>
+                    <div class="items-works__body">
+                            <a data-work-type="Удочки" href="#" class="items-works__item">
+                                <div class="item-works__image">
+                                  <img src="{% static 'main/img/cs.png' %}" alt="Image">
+                                </div>
+                            </a>
+                            <a data-work-type="Удочки" href="#" class="items-works__item">
+                                <div class="item-works__image">
+                                  <img src="{% static 'main/img/op.png' %}" alt="Image">
+                                </div>
+                              </a>
+                            <a data-work-type="Приманки" href="#" class="items-works__item">
+                                <div class="item-works__image">
+                                  <img src="{% static 'main/img/image 44.png' %}" alt="Image">
+                                </div>
+                            </a>
+                            <a data-work-type="Приманки" href="#" class="items-works__item">
+                                <div class="item-works__image">
+                                  <img src="{% static 'main/img/image 45.png' %}" alt="Image">
+                                </div>
+                            </a>
+                            <a data-work-type="Другое" href="#" class="items-works__item">
+                                <div class="item-works__image">
+                                  <img src="{% static 'main/img/po.png' %}" alt="Image">
+                                </div>
+                            </a>
+                            <a data-work-type="Другое" href="#" class="items-works__item">
+                                <div class="item-works__image">
+                                  <img src="{% static 'main/img/image 46.png' %}" alt="Image">
+                                </div>
+                            </a>
+                    </div>
+                  </div>
+                
+              </section>
+        </section>
+
+            <section class="diner" id="diner">
+                <div class="left">
+                    <h3 class="title-razvl">Романтические ужины на пирсах</h3>
+                    <p class="opisanie">Проведите время с любимым человеком романтично и
+                        незабываемо</p>
+                    <section class="cena">
+                        <div class="tipi-title">
+                        <div class="price ones">
+                            <h1 class="price-low">1 050 <i class="r"> ₽</i></h1>
+                            <div class="aga">
+                                <p class="proc">-30%</p>
+                                <h2 class="price-main"><del>1 500 </del><i class="r"> ₽</i></h2>
+                            </div>
+                        </div>
+                    </section> 
+                    <a href="{% url 'form_home' %}"><button class="btn btn-1 neo">ОСТАВИТЬ ЗАЯВКУ</button></a>
+                </div>
+                
+                <div class="right">
+                    <img src="{% static 'main/img/uzhin-pirse 1.png' %}" alt="">
+                </div>
+            
+            </section>
+        
+            <section class="masaje" id="masaje">
+                <div class="masaj">
+                    <div class="left">
+                        <h3 class="title-razvl">Массаж</h3>
+                        <p class="opisanie">Из 2 предоставляющихся видов массажа выберите наиболее подходящий именно вам.</p>
+                        <section class="cena">
+                            <div class="tipi-title">
+                            <div class="price ones">
+                                <h1 class="price-low">1 050 <i class="r"> ₽</i></h1>
+                                <div class="aga">
+                                    <p class="proc">-30%</p>
+                                    <h2 class="price-main"><del>1 500 </del><i class="r"> ₽</i></h2>
+                                </div>
+                            </div>
+                        </section> 
+                        <a href="{% url 'form_home' %}"><button class="btn btn-1 neo">ОСТАВИТЬ ЗАЯВКУ</button></a>
+                    </div>
+                    
+                    <div class="right">
+                        <img src="{% static 'main/img/massage-dsc08224 2.png' %}" alt="">
+                    </div>
+                </div>
+                <h2 class="works__title wow">Виды <s>массажей</s> </h2>
+                <section class="photo-vidi">
+                    
+                    <img class="is" src="{% static 'main/img/image38.png' %}" alt="">
+                    <img class="is" src="{% static 'main/img/image39.png' %}" alt="">
+                  </section>
+            </section>
+
+            <section class="sayna" id="sayna">
+                <div class="left">
+                    <h3 class="title-razvl">Парение в сауне</h3>
+                    <p class="opisanie">Настоящая финская сауна с панорамными окнами, установленная на пруду. Вместимость до 6 человек.</p>
+                    <section class="cena">
+                        <div class="tipi-title">
+                        <div class="price ones">
+                            <h1 class="price-low">1 050 <i class="r"> ₽</i></h1>
+                            <div class="aga">
+                                <p class="proc">-30%</p>
+                                <h2 class="price-main"><del>1 500 </del><i class="r"> ₽</i></h2>
+                            </div>
+                        </div>
+                    </section> 
+                    <a href="{% url 'form_home' %}"><button class="btn btn-1 neo">ОСТАВИТЬ ЗАЯВКУ</button></a>
+                </div>
+                
+                <div class="right">
+                    <img src="{% static 'main/img/knv_7428-e1698601553816 1.png' %}" alt="">
+                </div>
+            
+            </section>
+
+            <section class="ploshadka" id="ploshadka">
+                <div class="left">
+                    <h3 class="title-razvl">Детская зона</h3>
+                    <p class="opisanie">Детская площадка с большим количеством зон: горка, качели, лесенки, канаты, турники и даже баскетбольное кольцо.</p>
+                    <section class="cena">
+                        <div class="price ones free">
+                            <h1 class="price-low ">Бесплатно</h1>
+                        </div>
+                    </section> 
+                    
+                </div>
+                
+                <div class="right">
+                    <img src="{% static 'main/img/detskaya-ploshadka 1.png' %}" alt="">
+                </div>
+            
+            </section>
+        </div>
+    </main>
+</div>
+
+{% endblock %}

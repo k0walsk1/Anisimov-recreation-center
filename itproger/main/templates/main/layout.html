@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %} {% load static %} {% endblock %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+ 
+</head>
+<body>
+    
+    
+ <!-- sidebar -->
+ <aside>
+    <a href="{% url 'home' %}"><img class="logo" src="{% static 'main/img/лого 1.png' %}" alt="логотип"></a>
+    <ul class="items">
+        <li class="item "><a class="ite active" href="{% url 'home' %}"><img src="{% static 'main/img/image 6.png ' %}">Главная</a></li>
+        <li class="item dropdown">
+            <a class="ite s" href="#" class="dropbtn"><img src="{% static 'main/img/image 49.png ' %}"> Каталог</a>
+            <div class="dropdown-content">
+                <a class="ite" href="{% url 'journeys' %}"><img src="{% static 'main/img/image 3.png' %}"> Путешествия</a>
+                <a class="ite" href="{% url 'entertainments' %}"><img src="{% static 'main/img/image 4.png ' %}"> Развлечения</a>
+                <a class="ite" href="{% url 'games' %}"><img src="{% static 'main/img/image 5.png ' %}"> Игры</a>
+            </div>
+        </li>
+        <li class="item"><a class="ite" href="{% url 'about' %}"><img src="{% static 'main/img/image .png ' %} ">О нас</a></li>
+        <a href="{% url 'form_home' %}"><button class="btn btn-info">ОСТАВИТЬ ЗАЯВКУ</button></a>
+    </ul>
+</aside>
+{% block el %}
+<div class="elki">
+    <div class="elka1">
+        <img src="{% static 'main/img/image 32.png ' %}" alt="">
+    </div>
+    <div class="elka2">
+        <img src="{% static 'main/img/image 32.png ' %}" alt="">
+    </div>
+    
+</div>
+{% endblock %}
+
+
+    <main>
+        {% block content %}
+        {% endblock %}
+        {% block snus%}
+        <div class="center">
+            <div class="important-info">
+                <section class="faq">
+                    <h1 class="title">Ответы на часто задаваемые вопросы:</h1>
+                    <div class="questions">
+                        <details>
+                            <summary>Есть ли Wi-Fi в домиках ?</summary>
+                            <p class="text"> Да! Конечно, у нас имеется Wi-Fi по всей территории базы и в каждом домике. </p>
+                        </details>
+                        <details>
+                            <summary>Есть ли на территории обслуживающий персонал?</summary>
+                            <p class="text"> Конечно! У нас персонал имеется по всей территории базы. Он готов помочь вам если вы нуждыетесь в какой-либо помощи. </p>
+                        </details>
+                        <details>
+                            <summary>Есть ли на территории баня или сауна ?</summary>
+                            <p class="text">Да конечно. Ознакомиться подробнее с этой ифнформацией можно <a class="link-tyt" href="{% url 'entertainments' %}#sayna">тут</a></p>
+                        </details>
+                    </div>
+                    
+                </section>
+                <section class="map">
+                    <h1 class="title">Как к нам добраться ?</h1>
+                    <div class="mapa">
+                        <script class="mapa" type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A658117a1e2cbd5ab857f282250bdd95255d0e396d21acf3fc704bf827034346a&amp;width=586&amp;height=320&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
+                </section>
+
+                <!-- <section class="forma">
+                    <h1 class="title">Оставить заявку</h1>
+                    <form action="" method="get">
+                        <div class="dropdowns">
+                            <h1 class="dropbtn drop">Выберите вид услуги</h1>
+                            <div class="dropdown-contents">
+                            <a href="#">Места для размещения</a>
+                            <a href="#">Путешествия</a>
+                            <a href="#">Зазвлечения</a>
+                            <a href="#">Игры</a>
+                            </div>
+                        </div>
+                        <input required id="i-2" type="tel" class="form__input" placeholder="+ 7" name="tel">
+                        <input required id="i-2" type="email" class="form__input" placeholder="Email" name="email">
+                        <textarea id="i-3" class="form__input" placeholder="Коментарий" name="messsage"></textarea>
+                        <button type="submit" class="btn btn-2"><span>ОТПРАВИТЬ</span></button>
+                    </form>
+                </section> -->
+            </div>
+        </div>
+    </main>
+    <div class="center">
+        <footer class="footer">
+            <div class="social-links">
+                <a href="#" class="vk"><img src="{% static 'main/img/image 29.png' %}" alt="vk"></a>
+                <a href="#" class="tg"><img src="{% static 'main/img/image 30.png' %}" alt="tg"></a>
+            </div>
+            <img src="{% static 'main/img/лого 1.png' %}" alt="logo">
+            <div class="svazi">
+                <h1 class="title-footer">Связаться с нами</h1>
+                <a class="mail" href="mailto:sui@mail.ru">sui@mail.ru</a>
+                <a class="link" href="#">Оставить заявку</a>
+            </div>
+        </footer>
+    </div>
+    
+    {% endblock %}
+    <script src="{% static 'main/js/main.js' %}"></script>
+
+</body>
+</html>

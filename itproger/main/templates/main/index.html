@@ -1,0 +1,258 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}{{title}}{% endblock %}
+{% load static %}
+{% block content %}
+<div class="elki">
+    <div class="elka3">
+        <img src="{% static 'main/img/image 32.png ' %}" alt="">
+    </div>
+    <div class="elka5">
+        <img src="{% static 'main/img/image 32.png ' %}" alt="">
+    </div>
+  </div>
+<!-- Основной контент на главной странице -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<!-- main -->
+    <div class="center">
+
+        <main class="main">
+            <section class="mesta">
+                <h1 class="title">МЕСТА ДЛЯ РАЗМЕЩЕНИЯ</h1>
+        <!-- 1 -->
+        <div class="ius">
+                <div class="cards-mesta div1">
+                    <div class="card-mesta">
+                        <h1 class="title-card-mesta">Таунхаусы Village</h1>
+                        <img src="{% static 'main/img/s.png' %}" alt="" class="img-card-mesta">
+                        <p class="un-title_card-mesta">Домики площадью от 35-40 м² рассчитаны на проживание и полноценный отдых 2-х/4-х человек</p>
+                        <div class="price">
+                            <h1 class="price-low">1 050 <i class="r"> ₽</i></h1>
+                            <div class="aga">
+                                <p class="proc">-30%</p>
+                                <h2 class="price-main"><del>1 500 </del><i class="r"> ₽</i></h2>
+                            </div>
+                        </div>
+                        <a href="{% url 'form_home' %}#form"><button class="btn btn-1">ОСТАВИТЬ ЗАЯВКУ</button></a> 
+                    </div>
+                </div>
+        <!-- 2 -->
+                <div class="cards-mesta div2">
+                    <div class="card-mesta">
+                        <h1 class="title-card-mesta">Купольные глэмпы</h1>
+                        <img src="{% static 'main/img/knv_7276-768x512.png' %}" alt="" class="img-card-mesta">
+                        <p class="un-title_card-mesta">Домики площадью 35 м² рассчитаны на проживание и полноценный отдых 2-х человек</p>
+                        <div class="price">
+                            <h1 class="price-low">1 050 <i class="r"> ₽</i></h1>
+                            <div class="aga">
+                                <p class="proc">-30%</p>
+                                <h2 class="price-main"><del>1 500 </del><i class="r"> ₽</i></h2>
+                            </div>
+                        </div>
+                        <a href="{% url 'form_home' %}#form"><button class="btn btn-1">ОСТАВИТЬ ЗАЯВКУ</button></a> 
+                    </div>
+                </div>
+        </div>
+        <!-- 3 -->
+                <div class="cards-mesta div3">
+                    <div class="card-mesta">
+                        <h1 class="title-card-mesta">Теремок</h1>
+                        <img src="{% static 'main/img/knv_7167-768x512.png' %}" alt="" class="img-card-mesta">
+                        <p class="un-title_card-mesta">Домики площадью 35 м² рассчитаны на проживание и полноценный отдых 2-х человек</p>
+                        <div class="price">
+                            <h1 class="price-low">1 050 <i class="r"> ₽</i></h1>
+                            <div class="aga">
+                                <p class="proc">-30%</p>
+                                <h2 class="price-main"><del>1 500 </del><i class="r"> ₽</i></h2>
+                            </div>
+                        </div>
+                        <a href="{% url 'form_home' %}#form"><button class="btn btn-1">ОСТАВИТЬ ЗАЯВКУ</button></a> 
+                    </div>
+                </div>
+        
+            </section>
+            
+        <!-- путеществия -->
+        
+            <section class="journeys">
+                <h1 class="title">Путешествия</h1>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="content">
+                            <h1 class="title-kvadro">Квадрациклинг   </h1>
+                            <p class="un_title-kvadro">Испытаете невероятно крутые эмоции от проката</p>
+                            <a href="{%url 'journeys'%}#kvadro"><button class="btn kv">Подробнее</button></a>
+                        </div>
+                        <img src="{% static 'main/img/image12(1).png' %}" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="content">
+                            <h1 class="title-kvadro">Джипинг  </h1>
+                            <p class="un_title-kvadro">Испытаете невероятно крутые эмоции от проката</p>
+                            <a href="{%url 'journeys'%}#djiping"><button class="btn kv">Подробнее</button></a>
+                        </div>
+                        <img src="{% static 'main/img/image 36.png' %}" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="content">
+                            <h1 class="title-kvadro">Каякинг  </h1>
+                            <p class="un_title-kvadro">Испытаете невероятно крутые эмоции от проката</p>
+                            <a href="{%url 'journeys'%}#kaiaking"><button class="btn kv">Подробнее</button></a>
+                        </div>
+                        <img src="{% static 'main/img/image 34.png' %}" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="content">
+                            <h1 class="title-kvadro">Лыжинг / Сноубординг </h1>
+                            <p class="un_title-kvadro">Испытаете невероятно крутые эмоции от проката</p>
+                            <a href="{%url 'journeys'%}#liji"><button class="btn kv">Подробнее</button></a>
+                        </div>
+                        <img src="{% static 'main/img/image 35.png' %}" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-pagination-container">
+                        <div class="swiper-pagination"></div>
+                    </div>
+                  </div>
+            </section>
+        
+        <!-- развлечения -->
+
+        <section class="entertainments">
+            <h1 class="title">Развлечения</h1>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="content">
+                        <h1 class="title-kvadro">Кострище </h1>
+                        <p class="un_title-kvadro">Каждый вечер мы  зажигаем кострище для новых знакомств инеторопливых дружеских бесед</p>
+                        <a href="{%url 'entertainments'%}#koster"><button class="btn kv">Подробнее</button></a>
+                    </div>
+                    <img src="{% static 'main/img/koster-img_5890 1.png' %}" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="content">
+                        <h1 class="title-kvadro">Рыбалка / зимняя рыбалка </h1>
+                        <p class="un_title-kvadro">Бронируйте мостик для рыбалки в пруду</p>
+                        <a href="{%url 'entertainments'%}#fishing"><button class="btn kv">Подробнее</button></a>
+                    </div>
+                    <img src="{% static 'main/img/rybalka_dsc06820 1.png' %}" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="content">
+                        <h1 class="title-kvadro">Романтические ужины на пирсах </h1>
+                        <p class="un_title-kvadro">Проведите время с любимым человеком романтично и
+                            незабываемо</p>
+                            <a href="{%url 'entertainments'%}#diner"><button class="btn kv">Подробнее</button></a>
+                    </div>
+                    <img src="{% static 'main/img/uzhin-pirse 1.png' %}" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="content">
+                        <h1 class="title-kvadro">Массаж </h1>
+                        <p class="un_title-kvadro">Из 2 предоставляющихся видов массажа выберите наиболее подходящий именно вам.</p>
+                        <a href="{%url 'entertainments'%}#masaje"><button class="btn kv">Подробнее</button></a>
+                    </div>
+                    <img src="{% static 'main/img/massage-dsc08224 2.png' %}" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="content">
+                        <h1 class="title-kvadro">Парение в сауне </h1>
+                        <p class="un_title-kvadro">Настоящая финская сауна с панорамными окнами, установленная на пруду. Вместимость до 6 человек.</p>
+                        <a href="{%url 'entertainments'%}#sayna"><button class="btn kv">Подробнее</button></a>
+                    </div>
+                    <img src="{% static 'main/img/knv_7428-e1698601553816 1.png' %}" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="content">
+                        <h1 class="title-kvadro">Детская зона</h1>
+                        <p class="un_title-kvadro">Детская площадка с большим количеством зон: горка, качели, лесенки, канаты, турники и даже баскетбольное кольцо.</p>
+                        <a href="{%url 'entertainments'%}#ploshadka"><button class="btn kv">Подробнее</button></a>
+                    </div>
+                    <img src="{% static 'main/img/detskaya-ploshadka 1.png' %}" alt="">
+                  </div>
+                </div>
+                <div class="swiper-pagination-container">
+                    <div class="swiper-pagination"></div>
+                </div>
+              </div>
+        </section>
+
+        <!-- игры -->
+        <section class="games">
+            <h1 class="title">Игры</h1>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="content">
+                        <h1 class="title-kvadro">Футбольное поле  </h1>
+                        <p class="un_title-kvadro">Можно собраться большой, компанией друзей и провести время на свежем воздухе</p>
+                        <a href="{%url 'games'%}#footboll"><button class="btn kv">Подробнее</button></a>
+                    </div>
+                    <img src="{% static 'main/img/image 19.png' %}" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="content">
+                        <h1 class="title-kvadro">Волейбольное поле  </h1>
+                        <p class="un_title-kvadro">Можно собраться большой, компанией друзей и провести время на свежем воздухе</p>
+                        <a href="{%url 'games'%}#voleyball"><button class="btn kv">Подробнее</button></a>
+                    </div>
+                    <img src="{% static 'main/img/image 21.png' %}" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="content">
+                        <h1 class="title-kvadro">Баскетбольное поле  </h1>
+                        <p class="un_title-kvadro">Можно собраться большой, компанией друзей и провести время на свежем воздухе</p>
+                        <a href="{%url 'games'%}#basketball"><button class="btn kv">Подробнее</button></a>
+                    </div>
+                    <img src="{% static 'main/img/image 22.png' %}" alt="">
+                  </div>
+                </div>
+                <div class="swiper-pagination-container">
+                    <div class="swiper-pagination"></div>
+                </div>
+              </div>
+        </section>
+
+
+            <section class="why">
+                <h1 class="title">Почему выбирают нас</h1>
+                <div class="ones">
+                    <div class="one">
+                        <h3 class="mic title-why">Комфорт</h3>
+                        <img src="{% static 'main/img/image 24.png' %}" alt="" class="icon r">
+                    </div>
+                    <div class="one">
+                        <h3 class="mic title-why">Лучший сервис</h3>
+                        <img src="{% static 'main/img/image 25.png' %}" alt="" class="icon">
+                    </div>
+                    <div class="one">
+                        <h3 class="mic title-why">Бюджетные варианты</h3>
+                        <img src="{% static 'main/img/image 26.png' %}" alt="" class="icon">
+                    </div>
+                    <div class="one">
+                        <h3 class="mic title-why">Разнообразие развлечений</h3>
+                        <img src="{% static 'main/img/image 27.png' %}" alt="" class="icon">
+                    </div>
+                </div>
+            </section>
+        
+            <!-- <section class="ready">
+                <h1 class="title">Мы готовы улучшаться</h1>
+                <div class="buttons">
+                    <button class="but1">ОСТАВИТЬ ОТЗЫВ</button>
+                    <button class="but1 b">ПОМОЧЬ НАМ СТАТЬ ЛУЧШЕ</button>
+                </div>
+            </section> -->
+        
+            
+        </main>
+        
+        
+        <!-- end main -->
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+{% endblock %}

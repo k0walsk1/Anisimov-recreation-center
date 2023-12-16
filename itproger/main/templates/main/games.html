@@ -1,0 +1,37 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}{{title}}{% endblock %}
+{% load static %}
+{% block content %}
+<div class="center">
+    <main class="main">
+        <section class="intro-kvadro iy" id="footboll">
+                    
+            <div class="img-kvadro"><img src="{% static 'main/img/image 19.png' %}" alt=""></div>
+            <div class="obert">
+                <h1 class="title-kvadro">Футбольное поле </h1>
+                <p class="un_title-kvadro sis">Можно собраться большой, компанией друзей и провести время на свежем воздухе</p>
+                <a href="{% url 'form_home' %}"><button class="btn kv">ОСТАВИТЬ ЗАЯВКУ</button></a>
+            </div>
+        </section>
+        <section class="intro-kvadro iy" id="voleyball">
+                    
+            <div class="img-kvadro"><img src="{% static 'main/img/image 21.png' %}" alt=""></div>
+            <div class="obert">
+                <h1 class="title-kvadro">Волейбольное поле  </h1>
+                <p class="un_title-kvadro sis">Можно собраться большой, компанией друзей и провести время на свежем воздухе</p>
+                <a href="{% url 'form_home' %}"><button class="btn kv">ОСТАВИТЬ ЗАЯВКУ</button></a>
+            </div>
+        </section>
+        <section class="intro-kvadro iy" id="basketball">
+                    
+            <div class="img-kvadro"><img src="{% static 'main/img/image 22.png' %}" alt=""></div>
+            <div class="obert">
+                <h1 class="title-kvadro">Баскетбольное поле  </h1>
+                <p class="un_title-kvadro sis">Можно собраться большой, компанией друзей и провести время на свежем воздухе</p>
+                <a href="{% url 'form_home' %}"><button class="btn kv">ОСТАВИТЬ ЗАЯВКУ</button></a>
+            </div>
+        </section>
+    </main>
+</div>
+{% endblock %}

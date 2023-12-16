@@ -1,0 +1,172 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}{{title}}{% endblock %}
+{% load static %}
+{% block content %}
+<div class="elki">
+  <div class="elka3">
+      <img src="{% static 'main/img/image 32.png ' %}" alt="">
+  </div>
+  <div class="elka5">
+      <img src="{% static 'main/img/image 32.png ' %}" alt="">
+  </div>
+</div>
+<div class="center">
+    <main class="main">
+        <h1 class="title">Путешествия</h1>
+<!-- kvadro -->
+        
+        <section class="intro-kvadro" id="kvadro">
+            
+            <div class="img-kvadro"><img src="{% static 'main/img/image12(1).png' %}" alt=""></div>
+            <div class="obert">
+                <h1 class="title-kvadro">Квадрациклинг </h1>
+                <p class="un_title-kvadro">Испытаете невероятно крутые эмоции от проката</p>
+                <a href="{% url 'form_home' %}"><button class="btn kv">ОСТАВИТЬ ЗАЯВКУ</button></a>
+            </div>
+        </section>
+
+        <section class="filter">
+            <section class="page__works works">
+                <div class="works__container">
+                  <div class="tipi-title">
+                    <h2 class="works__title ">Виды <s>квадроциклов</s> на прокат</h2>
+                    <div class="price">
+                      <h1 class="price-low">1 050 <i class="r"> ₽</i></h1>
+                      <div class="aga">
+                          <p class="proc">-30%</p>
+                          <h2 class="price-main"><del>1 500 </del><i class="r"> ₽</i></h2>
+                      </div>
+                  </div>
+                  </div>
+                  
+                  <div class="works__items items-works">
+                    <nav class="items-works__navigation">
+                      <button data-work-type="" class="items-works__type button button_dark active">Все</button>
+                      <button data-work-type="UTV" class="items-works__type button button_dark">UTV</button>
+                      <button data-work-type="Sport" class="items-works__type button button_dark">Sport</button>
+                      <button data-work-type="Tourist" class="items-works__type button button_dark">Tourist</button>
+                    </nav>
+                    <div class="items-works__body">
+                            <a data-work-type="UTV" href="#" class="items-works__item">
+                                <div class="item-works__image">
+                                  <img src="{% static 'main/img/Course Website Landing Page Thumbnail 1-1.png' %}" alt="Image">
+                                </div>
+                            </a>
+                            <a data-work-type="UTV" href="#" class="items-works__item">
+                                <div class="item-works__image">
+                                  <img src="{% static 'main/img/Course Website Landing Page Thumbnail 1.png' %}" alt="Image">
+                                </div>
+                              </a>
+                            <a data-work-type="Sport" href="#" class="items-works__item">
+                                <div class="item-works__image">
+                                  <img src="{% static 'main/img/Rectangle-1.png' %}" alt="Image">
+                                </div>
+                            </a>
+                            <a data-work-type="Sport" href="#" class="items-works__item">
+                                <div class="item-works__image">
+                                  <img src="{% static 'main/img/Rectangle.png' %}" alt="Image">
+                                </div>
+                            </a>
+                            <a data-work-type="Tourist" href="#" class="items-works__item">
+                                <div class="item-works__image">
+                                  <img src="{% static 'main/img/Rectangle-2.png' %}" alt="Image">
+                                </div>
+                            </a>
+                            <a data-work-type="Tourist" href="#" class="items-works__item">
+                                <div class="item-works__image">
+                                  <img src="{% static 'main/img/image 37.png' %}" alt="Image">
+                                </div>
+                            </a>
+                    </div>
+                  </div>
+                </div>
+              </section>
+        </section>
+<!-- end kvadro -->
+<!-- джипинг -->
+        <section class="djiping" id="djiping">
+            <section class="intro-kvadro">
+                <div class="img-kvadro"><img src="{% static 'main/img/image 36.png' %}" alt=""></div>
+                <div class="obert">
+                    <h1 class="title-kvadro">Джипинг  </h1>
+                    <p class="un_title-kvadro">Испытаете невероятно крутые эмоции от проката</p>
+                    <a href="{% url 'form_home' %}"><button class="btn kv">ОСТАВИТЬ ЗАЯВКУ</button></a>
+                </div>
+            </section>
+            <section class="cena">
+                <div class="tipi-title">
+                  <h2 class="works__title ">Виды <s>джипов</s> на прокат</h2>
+                  <div class="price">
+                    <h1 class="price-low">1 050 <i class="r"> ₽</i></h1>
+                    <div class="aga">
+                        <p class="proc">-30%</p>
+                        <h2 class="price-main"><del>1 500 </del><i class="r"> ₽</i></h2>
+                    </div>
+                </div>
+            </section> 
+            <section class="photo-vidi">
+              <img class="is" src="{% static 'main/img/image 38.png' %}" alt="">
+              <img class="is" src="{% static 'main/img/image 39.png' %}" alt="">
+            </section>
+        </section>
+<!-- каякинг -->
+  <section class="kaiaking" id="kaiaking">
+        <section class="intro-kvadro">
+          <div class="img-kvadro"><img src="{% static 'main/img/image 34.png' %}" alt=""></div>
+          <div class="obert">
+              <h1 class="title-kvadro">Каякинг </h1>
+              <p class="un_title-kvadro">Испытаете невероятно крутые эмоции от проката</p>
+              <a href="{% url 'form_home' %}"><button class="btn kv">ОСТАВИТЬ ЗАЯВКУ</button></a>
+          </div>
+        </section>
+        <section class="cena">
+          <div class="tipi-title">
+            <h2 class="works__title ">Виды <s>каяков и сабов</s> на прокат</h2>
+            <div class="price">
+              <h1 class="price-low">1 050 <i class="r"> ₽</i></h1>
+              <div class="aga">
+                  <p class="proc">-30%</p>
+                  <h2 class="price-main"><del>1 500 </del><i class="r"> ₽</i></h2>
+              </div>
+          </div>
+      </section> 
+      <section class="photo-vidi">
+        <img class="is" src="{% static 'main/img/image 43.png' %}" alt="">
+        <img class="is" src="{% static 'main/img/image 42.png' %}" alt="">
+      </section>
+  </section>
+<!-- лыжи -->
+    <section class="liji" id="liji">
+        <section class="intro-kvadro">
+          <div class="img-kvadro"><img src="{% static 'main/img/image 35.png' %}" alt=""></div>
+          <div class="obert">
+              <h1 class="title-kvadro">Лыжинг / Сноубординг </h1>
+              <p class="un_title-kvadro">Испытаете невероятно крутые эмоции от проката</p>
+              <a href="{% url 'form_home' %}"><button class="btn kv">ОСТАВИТЬ ЗАЯВКУ</button></a>
+          </div>
+        </section>
+        <section class="cena">
+          <div class="tipi-title">
+            <h2 class="works__title ">Виды <s>лыж и сноубордов</s> на прокат</h2>
+            <div class="price">
+              <h1 class="price-low">1 050 <i class="r"> ₽</i></h1>
+              <div class="aga">
+                  <p class="proc">-30%</p>
+                  <h2 class="price-main"><del>1 500 </del><i class="r"> ₽</i></h2>
+              </div>
+          </div>
+      </section> 
+      <section class="photo-vidi">
+        <img class="is" src="{% static 'main/img/image 40.png' %}" alt="">
+        <img class="is" src="{% static 'main/img/image 41.png' %}" alt="">
+      </section>
+  </section>
+    </main>
+
+
+
+
+    
+</div>
+{% endblock %}
